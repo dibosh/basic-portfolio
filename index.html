@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Munim Dibosh - Programmer Learned To Design</title>
+	<link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/entypo_font.css">
+	<script src="http://github.com/Modernizr/Modernizr/raw/master/modernizr.js"></script>
+	
+</head>
+<body data-0="background-color:rgb(88,159,208)" data-1400="background-color:rgb(3,201,169)">
+<div style="display: none" id="loading">
+	<div>
+		<img src="images/loading.gif">
+		<div>something amazing about to happen</div> 
+	</div>
+</div>
+<script type="text/javascript">
+   document.getElementById("loading").style.display = "block";
+ </script> 
+<!-- <body data-0="background-color:rgb(30,139,195)" data-1400="background-color:rgb(226,106,106)" > -->
+<div class="container">
+	<h1 class="heading abs_pos">MUNIM<span>DIBOSH</span></h1>
+	<!-- THE BIKE -->
+	<div id="menubar" class="abs_pos" data-0="right:-620px" data-1400="right:0px">
+		<img id="motorbike" src="images/motorbike.png" class="abs_pos">
+		<p id="separator" class="abs_pos"></p>
+		<p id="menubar_text" class="abs_pos">off to ride, visit again soon.</p>
+	</div>
+	<!--LEFT SIDED ARTWORKS-->
+	<div id="artwork">
+		<img id="earphone" class="abs_pos" src="images/earphone.png" data-0="left:250px" data-1400="left:130px">
+		<img id="pencil" class="abs_pos" src="images/pencil.png">
+		<!--RIGHT SIDED ARTWORKS-->
+		<img id="stickynote" class="abs_pos"  data-0="top:184px" data-1400="top:150px" src="images/notes.png">
+		<img id="iphone" class="abs_pos"  data-0="right:255px" data-1400="right:200px" src="images/iphone.png">
+		<img id="mouse" class="abs_pos"  data-0="right:400px;top:350px" data-1400="right:300px;top:400px" src="images/mouse.png">
+		<img id="notebook" class="abs_pos"  src="images/notebook.png">
+		<!--RIGHT SIDED ARTWORKS-->
+		<img id="macbook" src="images/macbook.png" data-0="opacity:1" data-900="opacity:0">
+
+		<h1 id="tagline" data-0="margin-top:10px" data-1400="margin-top:0px">PROGRAMMER LEARNED TO DESIGN</h1>
+		<div id="arrow">	
+			<img src="images/scroll_indicator.png" width="42px" height="42px" data-0="transform:rotate(0deg)" data-1400="transform:rotate(180deg)">
+			<div id="arrow_info"></div>
+		</div>
+
+		<div class="focus_content" data-0="opacity:0" data-900="opacity:1">
+			I am a programmer and wannabe designer. I like to craft beautiful apps and visual interactions,continuously looking for new things to learn and feel very happy to talk about something I know. Besides my job as a Software Developer,I enjoy my time either by watching movies or sketching or riding bike. My profiles can be a better place to know more about me and what I do.
+			<div align="center" style="margin-top:40px;">
+				<!-- facebook entypo unicode -->
+				<a href="http://facebook.com/idibosh" class="sb">&#62221</a>
+				<a href="http://bd.linkedin.com/in/munimdibosh/" class="sb">&#62233</a>
+				<a href="https://behance.net/munimdibosh/" class="sb">&#62286</a>
+			</div>
+		
+		</div>
+	</div>
+	
+</div>
+
+<!--JavaScripts-->
+<script type="text/javascript" src="scripts/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="scripts/skrollr.min.js"></script>
+<script type="text/javascript">
+
+	var s = skrollr.init();
+	
+	$(window).load(function() { 
+		$("#loading").fadeOut(500);
+		$(".container").fadeIn(500);
+		$(".heading").animate({
+    		top:'60px',
+    		opacity:'1'
+  		},300,null); 
+
+		
+	});
+
+	$( "#arrow" ).click(function(){
+		var scrollPosition = window.scrollY;
+		if(scrollPosition == 0){
+			$("#arrow_info").html("scroll down");
+			$("#arrow_info").fadeIn(300);
+			setTimeout(function(){
+				$("#arrow_info").fadeOut(300);
+			}, 700);
+		}
+		if(scrollPosition == 1400){
+			$("#arrow_info").html("scroll up");
+			$("#arrow_info").fadeIn(300);
+			setTimeout(function(){
+				$("#arrow_info").fadeOut(300);
+			}, 700);
+		}
+	});
+	
+
+  		
+</script>
+
+</body>
+</html>

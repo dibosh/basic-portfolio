@@ -1,0 +1,235 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/** My CSS **/
+
+.container{
+	height:100%;
+	width: 100%;
+	position:fixed;
+}
+
+body{
+	background-color: #589fd0;
+	overflow: scroll;
+
+}
+#loading
+{
+   position: fixed;
+   left: 0px; 
+   right: 0px; 
+   top: 0px; 
+   bottom: 0px; 
+   background-color: #589fd0;
+   z-index: 99; /* Higher than anything else in the document */
+
+}
+#loading > div{
+	width: 200px;
+	height: 100px;
+	color: white;
+   	text-align: center;
+	font-family: verdana;
+   	position: absolute;
+   	top: 50%;
+   	left: 50%;
+   	margin-left: -100px;
+   	margin-top: -50px;
+}
+
+/*HYPERLINK BUTTONS*/
+a.sb,
+.sb a {
+	text-decoration: none;
+	display: inline-block;
+	font-size: 80px;
+	font-family: 'EntypoSocialRegular';
+	color: white;
+	
+}
+
+a.sb:hover,
+.sb a:hover,
+a.sb:hover:after,
+.sb a:hover:after {
+	color: black;
+}
+
+.heading{
+	font-family: 'ostrich_sansmedium',sans-serif;
+	font-size: 78px;
+	color: white;
+	top: 10px;
+	left: 50px;
+	opacity: 0;
+}
+
+.heading span{
+	font-family: 'ostrich_sansblack',sans-serif;
+	font-size: 71px;
+}
+
+#tagline{
+	font-family: 'ostrich_sansmedium',sans-serif;
+	font-size: 50px;
+	text-align: center;
+	color: white;
+	margin-top: 10px;
+}
+#arrow{
+	position: absolute;
+	left: 50%;
+	margin-left: -85px;
+	width: 170px;
+	text-align: center;
+}
+
+#arrow_info{
+	color: white;
+	font-size: 12px;
+	font-family: verdana;
+	width:120px;
+	position: absolute;
+	left: 50%;
+	margin-top: 5px;
+	margin-left: -60px;
+}
+
+
+.focus_content{
+	font-family: verdana;
+	line-height: 120%;
+	/*font-family: 'Raleway Dots', sans-serif;*/
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	text-align: center;
+	top: 230px;
+	left: 0px;right: 0px;
+	margin:auto;
+	width: 50%;
+}
+
+.focus_content span{
+	display: inline-block;
+	margin-top: 10px;
+	font-size: 16px;
+}
+.abs_pos{
+	display: block;
+	position: absolute;
+}
+
+/*Art works*/
+#artwork{
+	margin-top: 100px;
+}
+#menubar{
+	top:75px;
+	width: 550px;
+}
+#menubar_text{
+	left: 58px;
+	top: 18px;
+	color: white;
+	font-family: verdana;
+	font-size: 20px;
+}
+#separator{
+	top:38px;
+	left:50px;
+	width:100%;
+	height: 2px;	
+	background-color: white;
+}
+#motorbike{
+	width: 58px;
+	height: 42px;
+	image-rendering:optimizeQuality;
+}
+#earphone{
+	left:250px;
+	top:160px;
+	height: 40%;
+}
+#pencil{
+	left: 130px;
+	bottom: 0px;
+	height: 15%;
+}
+#stickynote{
+	right: 415px;
+	top: 184px;
+	height: 10%;
+}
+#iphone{
+	right: 255px;
+	top: 226px;
+	height: 25%;
+}
+#mouse{
+	right: 400px;
+	top: 350px;
+	height: 20%;
+}
+#macbook{
+	display: block;
+	margin: auto;
+	height: 55%;
+}
+#notebook{
+	right:0px;
+	bottom: 25px;
+	height: 30%;
+}
+
+
