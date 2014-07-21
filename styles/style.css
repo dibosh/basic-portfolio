@@ -50,18 +50,38 @@ table {
 
 
 /** My CSS **/
-
-.container{
-	height:100%;
-	width: 100%;
-	position:fixed;
-}
+/*COMMON SETUPS*/
 
 body{
-	background-color: #589fd0;
 	overflow: scroll;
-
 }
+/*the container which should not be moving with scroll*/
+.container{
+	position: fixed;
+	height:100%;
+	width: 100%;
+}
+
+.heading{
+	font-family: 'ostrich_sansmedium',sans-serif;
+	font-size: 78px;
+	color: white;
+	top: 10px;
+	left: 50px;
+	opacity: 0;
+}
+
+.heading span{
+	font-family: 'ostrich_sansblack',sans-serif;
+	font-size: 71px;
+}
+.abs_pos{
+	display: block;
+	position: absolute;
+}
+/*COMMON SETUPS END HERE*/
+
+/*LOADING SCREEN*/
 #loading
 {
    position: fixed;
@@ -86,38 +106,46 @@ body{
    	margin-top: -50px;
 }
 
-/*HYPERLINK BUTTONS*/
+/*SOCIAL BUTTONS*/
 a.sb,
 .sb a {
+	font-size: 70px;
+	font-family: 'EntypoSocialRegular';
+}
+
+
+
+/*CENTRAL ABOUT ME SECTION*/
+.focus_content{
+	font-family: verdana;
+	line-height: 120%;
+	/*font-family: 'Raleway Dots', sans-serif;*/
+	color: white;
+	font-size: 18px;
+	position: absolute;
+	text-align: center;
+	top: 230px;
+	left: 0px;right: 0px;
+	margin:auto;
+	width: 50%;
+}
+
+.focus_content p{
+	margin-bottom: 10px;
+}
+.focus_content a{
 	text-decoration: none;
 	display: inline-block;
-	font-size: 80px;
-	font-family: 'EntypoSocialRegular';
-	color: white;
-	
+	color: #336E7B;
+}
+a.focus_content:hover,
+.focus_content a:hover,
+a.focus_content:hover:after,
+.focus_content a:hover:after {
+	color: #22313F;
 }
 
-a.sb:hover,
-.sb a:hover,
-a.sb:hover:after,
-.sb a:hover:after {
-	color: black;
-}
-
-.heading{
-	font-family: 'ostrich_sansmedium',sans-serif;
-	font-size: 78px;
-	color: white;
-	top: 10px;
-	left: 50px;
-	opacity: 0;
-}
-
-.heading span{
-	font-family: 'ostrich_sansblack',sans-serif;
-	font-size: 71px;
-}
-
+/*THE CONTENT AFTER ABOUT ME*/
 #tagline{
 	font-family: 'ostrich_sansmedium',sans-serif;
 	font-size: 50px;
@@ -144,32 +172,7 @@ a.sb:hover:after,
 	margin-left: -60px;
 }
 
-
-.focus_content{
-	font-family: verdana;
-	line-height: 120%;
-	/*font-family: 'Raleway Dots', sans-serif;*/
-	color: white;
-	font-size: 20px;
-	position: absolute;
-	text-align: center;
-	top: 230px;
-	left: 0px;right: 0px;
-	margin:auto;
-	width: 50%;
-}
-
-.focus_content span{
-	display: inline-block;
-	margin-top: 10px;
-	font-size: 16px;
-}
-.abs_pos{
-	display: block;
-	position: absolute;
-}
-
-/*Art works*/
+/*ART WORKS*/
 #artwork{
 	margin-top: 100px;
 }
