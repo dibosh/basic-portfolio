@@ -1,0 +1,5 @@
+.DS_Store
+.openshift
+.sass-cache
+deplist.txt
+.idea/*

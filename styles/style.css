@@ -159,6 +159,7 @@ a.focus_content:hover:after,
 	margin-left: -85px;
 	width: 170px;
 	text-align: center;
+	-image-rendering:antialiased;
 }
 
 #arrow_info{
